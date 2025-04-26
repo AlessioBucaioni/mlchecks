@@ -4,6 +4,35 @@
     <meta charset="UTF-8">
     <title>The Checklist</title>
     <style>
+        .intro {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #555;
+}
+
+.intro-block {
+    margin: 30px 0;
+    text-align: left;
+}
+
+.intro-block p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
@@ -71,25 +100,28 @@
 
        <div class="intro">
     <h1>The Checklist</h1>
-    <p>
+
+    <p class="intro-text">
         This checklist is organized into two main categories:
     </p>
-    <ul>
-        <li><strong>System concerns:</strong> Address quality attribute concerns that apply to the system as a whole, without requiring special considerations for ML components compared to traditional components.</li>
-        <li><strong>Process concerns:</strong> Focus on the effective management and execution of the development and maintenance process for ML-enabled systems, as well as concerns specific to architecting such systems.</li>
-    </ul>
 
-    <p>
+    <div class="intro-block">
+        <p><strong>System concerns:</strong> Address quality attribute concerns that apply to the system as a whole, without requiring special considerations for ML components compared to traditional components.</p>
+        <p><strong>Process concerns:</strong> Focus on the effective management and execution of the development and maintenance process for ML-enabled systems, as well as concerns specific to architecting such systems.</p>
+    </div>
+
+    <p class="intro-text">
         Each check in the checklist is described using the following fields:
     </p>
-    <ul>
-        <li><strong>ID:</strong> A unique identifier following a naming convention: the capital initial of the main category (S for System, P for Process) followed by the capital initial of the subcategory (e.g., A for Availability) and an integer. If ambiguities arise, a two-letter abbreviation is used (e.g., SMD for System–Modularity).</li>
-        <li><strong>Name:</strong> A brief descriptive label summarizing the focus of the check.</li>
-        <li><strong>Source:</strong> The origin of the check, as derived from prior research and empirical studies.</li>
-        <li><strong>Context:</strong> Additional contextual information supporting the check’s relevance.</li>
-        <li><strong>Check:</strong> The specific question or statement to be considered during architectural decision-making.</li>
-        <li><strong>ML Specificity:</strong> The degree to which the check is specific to ML-intensive systems, categorized as low (L), medium (M), or high (H).</li>
-    </ul>
+
+    <div class="intro-block">
+        <p><strong>ID:</strong> A unique identifier following a naming convention: the capital initial of the main category (S for System, P for Process) followed by the capital initial of the subcategory (e.g., A for Availability) and an integer. If ambiguities arise, a two-letter abbreviation is used (e.g., SMD for System–Modularity).</p>
+        <p><strong>Name:</strong> A brief descriptive label summarizing the focus of the check.</p>
+        <p><strong>Source:</strong> The origin of the check, as derived from prior research and empirical studies.</p>
+        <p><strong>Context:</strong> Additional contextual information supporting the check’s relevance.</p>
+        <p><strong>Check:</strong> The specific question or statement to be considered during architectural decision-making.</p>
+        <p><strong>ML Specificity:</strong> The degree to which the check is specific to ML-intensive systems, categorized as low (L), medium (M), or high (H).</p>
+    </div>
 </div>
  
 
