@@ -94,89 +94,63 @@
  
 
         <div class="section-title">System</div>
+<table>
+    <tr>
+        <th>Subcategory</th>
+        <th>ID</th>
+        <th>Check</th>
+        <th>ML Specificity</th>
+    </tr>
+    <tr><td>Data visualization</td><td>SU1</td><td>Do you have data visualization techniques in place?</td><td>L</td></tr>
+    <tr><td>Visualization techniques</td><td>SU2</td><td>Have you considered visualization techniques to identify or highlight relationships between data and computing tasks?</td><td>M</td></tr>
+    <tr><td>Data preparation</td><td>SDQ1</td><td>Do you have strategies for data preparation and for making statistics on data?</td><td>H</td></tr>
+    <tr><td>Data cleaning</td><td>SDQ2</td><td>Is your dataset clean, of good quality, and free from potential bias?</td><td>H</td></tr>
+    <tr><td>Dataset size</td><td>SDQ3</td><td>Are you concerned about dataset size in ML processing?</td><td>H</td></tr>
+    <tr><td>Concept drift</td><td>SDQ4</td><td>Do you engineer your ML-based system to adapt to input data changes (concept drift)?</td><td>H</td></tr>
+    <tr><td>System correctness</td><td>SC1</td><td>Do you have techniques for ensuring system correctness?</td><td>H</td></tr>
+    <tr><td>Model validation</td><td>SMV1</td><td>Are you performing validation of the model to predict how a learning algorithm will behave on new data?</td><td>H</td></tr>
+    <tr><td>Model validation</td><td>SMV2</td><td>Are you combining model validation with data validation to detect data errors?</td><td>H</td></tr>
+    <tr><td>Independent upgradeability</td><td>SMD1</td><td>Are you building a component-based distributed system where parts may need to be upgraded?</td><td>M</td></tr>
+    <tr><td>High Cohesion and low coupling</td><td>SMD2</td><td>Are high cohesion and low coupling important?</td><td>L</td></tr>
+    <tr><td>Microservice</td><td>SMD3</td><td>If you are interested in maintainability and modifiability, did you consider using a microservice architecture?</td><td>L</td></tr>
+    <tr><td>Discrete service</td><td>SMD4</td><td>Can you decompose your system into discrete services?</td><td>L</td></tr>
+    <tr><td>Modeling intrinsic uncertainty</td><td>SMN1</td><td>Can you explicitly model the intrinsic uncertainty of ML components and assess its impact at the design stage?</td><td>H</td></tr>
+    <tr><td>Time predictability</td><td>SMN2</td><td>Do you have mechanisms for monitoring and post-analysis of time predictability?</td><td>H</td></tr>
+    <tr><td>Monitoring drift</td><td>SMN3</td><td>Do you have tests that monitor changes in input distributions?</td><td>H</td></tr>
+    <tr><td>Continuous integration</td><td>SDE1</td><td>Can you use continuous integration techniques for system development?</td><td>M</td></tr>
+    <tr><td>Infrastructure as code</td><td>SDE2</td><td>Do you manage IT infrastructure like servers, databases, and networks through code for your ML system?</td><td>M</td></tr>
+    <tr><td>Blue/Green, Canary testing</td><td>SDE3</td><td>Are you including Blue/Green or canary testing in your MLOps pipelines?</td><td>H</td></tr>
+    <tr><td>Failure recovery strategy</td><td>SA1</td><td>Did you consider failure recovery strategies to avoid failure propagation?</td><td>L</td></tr>
+    <tr><td>Domain knowledge</td><td>SA2</td><td>Do you have the required domain knowledge to handle availability decisions?</td><td>M</td></tr>
+    <tr><td>Layered/tiered architecture</td><td>SA3</td><td>Can you split business logic from ML components using a layered/tiered architecture?</td><td>M</td></tr>
+    <tr><td>Uncertainty</td><td>SR1</td><td>Do you have complete information on ML uncertainty at design time?</td><td>H</td></tr>
+    <tr><td>Fail safe</td><td>SS1</td><td>Do you have techniques to quickly reach safe states when needed?</td><td>H</td></tr>
+    <tr><td>Safety evaluation</td><td>SS2</td><td>Have you included evaluation processes for architectural safety choices?</td><td>L</td></tr>
+    <tr><td>Coding standards</td><td>SS3</td><td>Do you use strict and certified coding standards for safety-critical ML components?</td><td>L</td></tr>
+    <tr><td>External certification</td><td>SS4</td><td>Is your system safety-certified by external authorities?</td><td>L</td></tr>
+    <tr><td>Design to defend</td><td>SS5</td><td>Are you designing your ML system to defend vulnerable code sections from cyberattacks?</td><td>H</td></tr>
+    <tr><td>Safety and fairness</td><td>SS6</td><td>Do you ensure systematic fairness and safety in your ML system?</td><td>H</td></tr>
+    <tr><td>Data loss</td><td>SP1</td><td>Do you handle data loss reduction and privacy preservation, e.g., using federated learning?</td><td>H</td></tr>
+</table>
 
-        <table>
-            <tr>
-                <th>Subcategory</th>
-                <th>ID</th>
-                <th>Check</th>
-                <th>ML Specificity</th>
-            </tr>
-            <tr>
-                <td>Data visualization</td>
-                <td>SU1</td>
-                <td>Do you have data visualization techniques in place?</td>
-                <td>L</td>
-            </tr>
-            <tr>
-                <td>Visualization techniques</td>
-                <td>SU2</td>
-                <td>Have you considered visualization techniques to highlight relationships between data and tasks?</td>
-                <td>M</td>
-            </tr>
-            <tr>
-                <td>Data preparation</td>
-                <td>SDQ1</td>
-                <td>Do you have strategies for data preparation and making statistics on data?</td>
-                <td>H</td>
-            </tr>
-            <tr>
-                <td>Data cleaning</td>
-                <td>SDQ2</td>
-                <td>Is your dataset clean, of good quality, and free from potential bias?</td>
-                <td>H</td>
-            </tr>
-            <tr>
-                <td>Dataset size</td>
-                <td>SDQ3</td>
-                <td>Are you concerned about dataset size in ML processing?</td>
-                <td>H</td>
-            </tr>
-            <tr>
-                <td>Concept drift</td>
-                <td>SDQ4</td>
-                <td>Do you engineer your ML system to adapt to input data changes (concept drift)?</td>
-                <td>H</td>
-            </tr>
-            <tr>
-                <td>System correctness</td>
-                <td>SC1</td>
-                <td>Do you have techniques for ensuring system correctness?</td>
-                <td>H</td>
-            </tr>
-            <!-- More rows continue here following the structure you want -->
-        </table>
-
-        <div class="section-title">Process</div>
-
-        <table>
-            <tr>
-                <th>Subcategory</th>
-                <th>ID</th>
-                <th>Check</th>
-                <th>ML Specificity</th>
-            </tr>
-            <tr>
-                <td>Documentation</td>
-                <td>PD1</td>
-                <td>Do you have proper documentation or a plan to document your ML system?</td>
-                <td>M</td>
-            </tr>
-            <tr>
-                <td>Team</td>
-                <td>PT1</td>
-                <td>Do you have heterogeneous teams mixing ML developers, data engineers, and architects?</td>
-                <td>D</td>
-            </tr>
-            <tr>
-                <td>Test-driven</td>
-                <td>PT1</td>
-                <td>Do you have a test-driven development strategy for QA?</td>
-                <td>M</td>
-            </tr>
-            <!-- More rows continue here for process concerns -->
-        </table>
-
+<!-- Process Checks Table -->
+<div class="section-title">Process</div>
+<table>
+    <tr>
+        <th>Subcategory</th>
+        <th>ID</th>
+        <th>Check</th>
+        <th>ML Specificity</th>
+    </tr>
+    <tr><td>Documentation</td><td>PD1</td><td>Do you have proper documentation or a plan to document your ML system?</td><td>M</td></tr>
+    <tr><td>Team</td><td>PT1</td><td>Do you have heterogeneous teams mixing ML developers, data engineers, and architects?</td><td>D</td></tr>
+    <tr><td>Test-driven</td><td>PT2</td><td>Do you have a test-driven development strategy for your QA and testing process?</td><td>M</td></tr>
+    <tr><td>Separate pipelines</td><td>PSP1</td><td>Do you separate the branches for training pipelines from model training?</td><td>H</td></tr>
+    <tr><td>Model customization and reuse</td><td>SML1</td><td>Do you have expertise to customize and reuse models?</td><td>H</td></tr>
+    <tr><td>Versioning</td><td>SML2</td><td>Do you manage and version ML models?</td><td>H</td></tr>
+    <tr><td>ML infrastructure for deployment</td><td>SMI3</td><td>Have you defined ML infrastructure and deployment processes?</td><td>H</td></tr>
+    <tr><td>Model testing</td><td>SML4</td><td>Are you testing the quality and performance of your models?</td><td>H</td></tr>
+</table>
     </div>
 
 </body>
