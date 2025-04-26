@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Checklist</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+        nav {
+            background: #f8f8f8;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            font-size: 16px;
+            display: inline-block;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        .section-title {
+            font-size: 28px;
+            color: #222;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="checklist.html">The Checklist</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">The Team</a>
+    </nav>
+
+    <div class="container">
+
+       <div class="intro">
+    <h1>The Checklist</h1>
+    <p>
+        This checklist is organized into two main categories:
+    </p>
+    <ul>
+        <li><strong>System concerns:</strong> Address quality attribute concerns that apply to the system as a whole, without requiring special considerations for ML components compared to traditional components.</li>
+        <li><strong>Process concerns:</strong> Focus on the effective management and execution of the development and maintenance process for ML-enabled systems, as well as concerns specific to architecting such systems.</li>
+    </ul>
+
+    <p>
+        Each check in the checklist is described using the following fields:
+    </p>
+    <ul>
+        <li><strong>ID:</strong> A unique identifier following a naming convention: the capital initial of the main category (S for System, P for Process) followed by the capital initial of the subcategory (e.g., A for Availability) and an integer. If ambiguities arise, a two-letter abbreviation is used (e.g., SMD for System–Modularity).</li>
+        <li><strong>Name:</strong> A brief descriptive label summarizing the focus of the check.</li>
+        <li><strong>Source:</strong> The origin of the check, as derived from prior research and empirical studies.</li>
+        <li><strong>Context:</strong> Additional contextual information supporting the check’s relevance.</li>
+        <li><strong>Check:</strong> The specific question or statement to be considered during architectural decision-making.</li>
+        <li><strong>ML Specificity:</strong> The degree to which the check is specific to ML-intensive systems, categorized as low (L), medium (M), or high (H).</li>
+    </ul>
+</div>
+ 
+
+        <div class="section-title">System</div>
+
+        <table>
+            <tr>
+                <th>Subcategory</th>
+                <th>ID</th>
+                <th>Check</th>
+                <th>ML Specificity</th>
+            </tr>
+            <tr>
+                <td>Data visualization</td>
+                <td>SU1</td>
+                <td>Do you have data visualization techniques in place?</td>
+                <td>L</td>
+            </tr>
+            <tr>
+                <td>Visualization techniques</td>
+                <td>SU2</td>
+                <td>Have you considered visualization techniques to highlight relationships between data and tasks?</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>Data preparation</td>
+                <td>SDQ1</td>
+                <td>Do you have strategies for data preparation and making statistics on data?</td>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>Data cleaning</td>
+                <td>SDQ2</td>
+                <td>Is your dataset clean, of good quality, and free from potential bias?</td>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>Dataset size</td>
+                <td>SDQ3</td>
+                <td>Are you concerned about dataset size in ML processing?</td>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>Concept drift</td>
+                <td>SDQ4</td>
+                <td>Do you engineer your ML system to adapt to input data changes (concept drift)?</td>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>System correctness</td>
+                <td>SC1</td>
+                <td>Do you have techniques for ensuring system correctness?</td>
+                <td>H</td>
+            </tr>
+            <!-- More rows continue here following the structure you want -->
+        </table>
+
+        <div class="section-title">Process</div>
+
+        <table>
+            <tr>
+                <th>Subcategory</th>
+                <th>ID</th>
+                <th>Check</th>
+                <th>ML Specificity</th>
+            </tr>
+            <tr>
+                <td>Documentation</td>
+                <td>PD1</td>
+                <td>Do you have proper documentation or a plan to document your ML system?</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>Team</td>
+                <td>PT1</td>
+                <td>Do you have heterogeneous teams mixing ML developers, data engineers, and architects?</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>Test-driven</td>
+                <td>PT1</td>
+                <td>Do you have a test-driven development strategy for QA?</td>
+                <td>M</td>
+            </tr>
+            <!-- More rows continue here for process concerns -->
+        </table>
+
+    </div>
+
+</body>
+</html>
